@@ -8,8 +8,9 @@
     </head>
     <body>
        
-       <h1>Cześć, <c:out value="${person1.firstName}"/>!</h1>
+       <h1>Cześć, <c:out value="${person1.firstName} ${person1.lastName}"/>!</h1>
        <%-- tutaj tekst interpretowany jest jako tekst a nie jak fragment kodu (html)--%>
+       <h1>Cześć, ${person1.firstName} ${person1.lastName}!</h1>
        <h2>Mail to : <a href="mailto:${person1.email}">${person1.email}</a></h2>
         <%--  Analizuje kod i wykonuje to co zawiera tzn.: jeżeli uwzględniamy kolor napisu to go zmieni, bądź jeżeli wkleimy tam skrypt to zostanie wykonany  --%>
    
